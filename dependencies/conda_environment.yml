@@ -1,0 +1,22 @@
+name: bill
+channels:
+  - conda-forge
+
+dependencies:
+  - python=3.10
+  - dlib=19.24.6
+  - pip
+  - pip:
+      - cv_bridge
+      - numpy==1.22.0
+      - scipy==1.11.4
+      - pillow==9.0.1
+      - opencv-python==4.11.0.86
+      - speechRecognition==3.14.1
+      - gtts==2.5.4
+      - playsound==1.2.2
+      - PyAudio==0.2.14
+      - noisereduce==3.0.3
+      - empy==3.3.4
+      - catkin_pkg==1.0.0
+      - lark-parser==0.12.0
