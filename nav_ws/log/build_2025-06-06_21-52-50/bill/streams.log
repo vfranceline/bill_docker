@@ -1,0 +1,42 @@
+[0.011s] Invoking command in '/nav_ws/build/bill': AMENT_PREFIX_PATH=/nav_ws/install/bill_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/nav_ws/install/bill_description:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy /usr/bin/cmake /nav_ws/src/bill -DCMAKE_INSTALL_PREFIX=/nav_ws/install/bill
+[0.078s] -- The C compiler identification is GNU 13.3.0
+[0.140s] -- The CXX compiler identification is GNU 13.3.0
+[0.163s] -- Detecting C compiler ABI info
+[0.280s] -- Detecting C compiler ABI info - done
+[0.288s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.289s] -- Detecting C compile features
+[0.289s] -- Detecting C compile features - done
+[0.304s] -- Detecting CXX compiler ABI info
+[0.433s] -- Detecting CXX compiler ABI info - done
+[0.443s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.444s] -- Detecting CXX compile features
+[0.444s] -- Detecting CXX compile features - done
+[0.452s] -- Found ament_cmake: 2.5.4 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[0.623s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+[0.789s] -- Found ament_lint_auto: 0.17.2 (/opt/ros/jazzy/share/ament_lint_auto/cmake)
+[0.920s] -- Added test 'lint_cmake' to check CMake code style
+[0.921s] -- Added test 'xmllint' to check XML markup files
+[0.924s] -- Configuring done (0.9s)
+[0.927s] -- Generating done (0.0s)
+[0.929s] -- Build files have been written to: /nav_ws/build/bill
+[0.935s] Invoked command in '/nav_ws/build/bill' returned '0': AMENT_PREFIX_PATH=/nav_ws/install/bill_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/nav_ws/install/bill_description:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy /usr/bin/cmake /nav_ws/src/bill -DCMAKE_INSTALL_PREFIX=/nav_ws/install/bill
+[0.936s] Invoking command in '/nav_ws/build/bill': AMENT_PREFIX_PATH=/nav_ws/install/bill_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/nav_ws/install/bill_description:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy /usr/bin/cmake --build /nav_ws/build/bill -- -j16 -l16
+[0.984s] Invoked command in '/nav_ws/build/bill' returned '0': AMENT_PREFIX_PATH=/nav_ws/install/bill_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/nav_ws/install/bill_description:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy /usr/bin/cmake --build /nav_ws/build/bill -- -j16 -l16
+[0.986s] Invoking command in '/nav_ws/build/bill': AMENT_PREFIX_PATH=/nav_ws/install/bill_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/nav_ws/install/bill_description:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy /usr/bin/cmake --install /nav_ws/build/bill
+[0.995s] -- Install configuration: ""
+[0.996s] -- Installing: /nav_ws/install/bill/share/ament_index/resource_index/package_run_dependencies/bill
+[0.996s] -- Installing: /nav_ws/install/bill/share/ament_index/resource_index/parent_prefix_path/bill
+[0.996s] -- Installing: /nav_ws/install/bill/share/bill/environment/ament_prefix_path.sh
+[0.996s] -- Installing: /nav_ws/install/bill/share/bill/environment/ament_prefix_path.dsv
+[0.997s] -- Installing: /nav_ws/install/bill/share/bill/environment/path.sh
+[0.997s] -- Installing: /nav_ws/install/bill/share/bill/environment/path.dsv
+[0.997s] -- Installing: /nav_ws/install/bill/share/bill/local_setup.bash
+[0.997s] -- Installing: /nav_ws/install/bill/share/bill/local_setup.sh
+[0.997s] -- Installing: /nav_ws/install/bill/share/bill/local_setup.zsh
+[0.997s] -- Installing: /nav_ws/install/bill/share/bill/local_setup.dsv
+[0.997s] -- Installing: /nav_ws/install/bill/share/bill/package.dsv
+[0.997s] -- Installing: /nav_ws/install/bill/share/ament_index/resource_index/packages/bill
+[0.998s] -- Installing: /nav_ws/install/bill/share/bill/cmake/billConfig.cmake
+[0.998s] -- Installing: /nav_ws/install/bill/share/bill/cmake/billConfig-version.cmake
+[0.998s] -- Installing: /nav_ws/install/bill/share/bill/package.xml
+[1.000s] Invoked command in '/nav_ws/build/bill' returned '0': AMENT_PREFIX_PATH=/nav_ws/install/bill_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/nav_ws/install/bill_description:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy /usr/bin/cmake --install /nav_ws/build/bill

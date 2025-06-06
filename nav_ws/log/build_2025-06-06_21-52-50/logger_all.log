@@ -1,0 +1,269 @@
+[0.228s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[0.228s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=16, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, mixin_files=None, mixin=None, verb_parser=<colcon_mixin.mixin.mixin_argument.MixinArgumentDecorator object at 0x71aeb5479940>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x71aeb54794c0>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x71aeb54794c0>>, mixin_verb=('build',))
+[0.282s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.283s] INFO:colcon.colcon_metadata.package_discovery.colcon_meta:Using configuration from '/root/.colcon/metadata/default/Gazebo.meta'
+[0.283s] INFO:colcon.colcon_metadata.package_discovery.colcon_meta:Using configuration from '/root/.colcon/metadata/default/fastdds.meta'
+[0.284s] INFO:colcon.colcon_metadata.package_discovery.colcon_meta:Using configuration from '/root/.colcon/metadata/default/fastrtps.meta'
+[0.284s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.284s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.284s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.284s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.284s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.284s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/nav_ws'
+[0.284s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.284s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.284s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.284s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.284s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.284s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.284s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.284s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.284s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.313s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.313s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.313s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.313s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.313s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.313s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.314s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.314s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.314s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.314s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.314s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.314s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.314s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.314s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.314s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[0.314s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[0.314s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[0.314s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[0.314s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[0.314s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[0.314s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[0.314s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[0.314s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[0.314s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[0.314s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[0.314s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[0.315s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[0.315s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[0.315s] Level 1:colcon.colcon_core.package_identification:_identify(src/bill) by extensions ['ignore', 'ignore_ament_install']
+[0.315s] Level 1:colcon.colcon_core.package_identification:_identify(src/bill) by extension 'ignore'
+[0.315s] Level 1:colcon.colcon_core.package_identification:_identify(src/bill) by extension 'ignore_ament_install'
+[0.315s] Level 1:colcon.colcon_core.package_identification:_identify(src/bill) by extensions ['colcon_pkg']
+[0.315s] Level 1:colcon.colcon_core.package_identification:_identify(src/bill) by extension 'colcon_pkg'
+[0.315s] Level 1:colcon.colcon_core.package_identification:_identify(src/bill) by extensions ['colcon_meta']
+[0.315s] Level 1:colcon.colcon_core.package_identification:_identify(src/bill) by extension 'colcon_meta'
+[0.315s] Level 1:colcon.colcon_core.package_identification:_identify(src/bill) by extensions ['ros']
+[0.315s] Level 1:colcon.colcon_core.package_identification:_identify(src/bill) by extension 'ros'
+[0.318s] DEBUG:colcon.colcon_core.package_identification:Package 'src/bill' with type 'ros.ament_cmake' and name 'bill'
+[0.318s] Level 1:colcon.colcon_core.package_identification:_identify(src/bill_description) by extensions ['ignore', 'ignore_ament_install']
+[0.318s] Level 1:colcon.colcon_core.package_identification:_identify(src/bill_description) by extension 'ignore'
+[0.318s] Level 1:colcon.colcon_core.package_identification:_identify(src/bill_description) by extension 'ignore_ament_install'
+[0.318s] Level 1:colcon.colcon_core.package_identification:_identify(src/bill_description) by extensions ['colcon_pkg']
+[0.318s] Level 1:colcon.colcon_core.package_identification:_identify(src/bill_description) by extension 'colcon_pkg'
+[0.318s] Level 1:colcon.colcon_core.package_identification:_identify(src/bill_description) by extensions ['colcon_meta']
+[0.318s] Level 1:colcon.colcon_core.package_identification:_identify(src/bill_description) by extension 'colcon_meta'
+[0.318s] Level 1:colcon.colcon_core.package_identification:_identify(src/bill_description) by extensions ['ros']
+[0.318s] Level 1:colcon.colcon_core.package_identification:_identify(src/bill_description) by extension 'ros'
+[0.319s] DEBUG:colcon.colcon_core.package_identification:Package 'src/bill_description' with type 'ros.ament_cmake' and name 'bill_description'
+[0.319s] Level 1:colcon.colcon_core.package_identification:_identify(src/bill_gazebo) by extensions ['ignore', 'ignore_ament_install']
+[0.319s] Level 1:colcon.colcon_core.package_identification:_identify(src/bill_gazebo) by extension 'ignore'
+[0.319s] Level 1:colcon.colcon_core.package_identification:_identify(src/bill_gazebo) by extension 'ignore_ament_install'
+[0.319s] Level 1:colcon.colcon_core.package_identification:_identify(src/bill_gazebo) by extensions ['colcon_pkg']
+[0.319s] Level 1:colcon.colcon_core.package_identification:_identify(src/bill_gazebo) by extension 'colcon_pkg'
+[0.319s] Level 1:colcon.colcon_core.package_identification:_identify(src/bill_gazebo) by extensions ['colcon_meta']
+[0.319s] Level 1:colcon.colcon_core.package_identification:_identify(src/bill_gazebo) by extension 'colcon_meta'
+[0.319s] Level 1:colcon.colcon_core.package_identification:_identify(src/bill_gazebo) by extensions ['ros']
+[0.319s] Level 1:colcon.colcon_core.package_identification:_identify(src/bill_gazebo) by extension 'ros'
+[0.319s] DEBUG:colcon.colcon_core.package_identification:Package 'src/bill_gazebo' with type 'ros.ament_cmake' and name 'bill_gazebo'
+[0.320s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.320s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.320s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.320s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.320s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.341s] Level 5:colcon.colcon_core.verb:set package 'bill_description' build argument 'cmake_args' from command line to 'None'
+[0.341s] Level 5:colcon.colcon_core.verb:set package 'bill_description' build argument 'cmake_target' from command line to 'None'
+[0.341s] Level 5:colcon.colcon_core.verb:set package 'bill_description' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.341s] Level 5:colcon.colcon_core.verb:set package 'bill_description' build argument 'cmake_clean_cache' from command line to 'False'
+[0.341s] Level 5:colcon.colcon_core.verb:set package 'bill_description' build argument 'cmake_clean_first' from command line to 'False'
+[0.342s] Level 5:colcon.colcon_core.verb:set package 'bill_description' build argument 'cmake_force_configure' from command line to 'False'
+[0.342s] Level 5:colcon.colcon_core.verb:set package 'bill_description' build argument 'ament_cmake_args' from command line to 'None'
+[0.342s] Level 5:colcon.colcon_core.verb:set package 'bill_description' build argument 'catkin_cmake_args' from command line to 'None'
+[0.342s] Level 5:colcon.colcon_core.verb:set package 'bill_description' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.342s] DEBUG:colcon.colcon_core.verb:Building package 'bill_description' with the following arguments: {'ament_cmake_args': None, 'build_base': '/nav_ws/build/bill_description', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/nav_ws/install/bill_description', 'merge_install': False, 'path': '/nav_ws/src/bill_description', 'symlink_install': False, 'test_result_base': None}
+[0.342s] Level 5:colcon.colcon_core.verb:set package 'bill_gazebo' build argument 'cmake_args' from command line to 'None'
+[0.342s] Level 5:colcon.colcon_core.verb:set package 'bill_gazebo' build argument 'cmake_target' from command line to 'None'
+[0.342s] Level 5:colcon.colcon_core.verb:set package 'bill_gazebo' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.342s] Level 5:colcon.colcon_core.verb:set package 'bill_gazebo' build argument 'cmake_clean_cache' from command line to 'False'
+[0.342s] Level 5:colcon.colcon_core.verb:set package 'bill_gazebo' build argument 'cmake_clean_first' from command line to 'False'
+[0.342s] Level 5:colcon.colcon_core.verb:set package 'bill_gazebo' build argument 'cmake_force_configure' from command line to 'False'
+[0.342s] Level 5:colcon.colcon_core.verb:set package 'bill_gazebo' build argument 'ament_cmake_args' from command line to 'None'
+[0.342s] Level 5:colcon.colcon_core.verb:set package 'bill_gazebo' build argument 'catkin_cmake_args' from command line to 'None'
+[0.342s] Level 5:colcon.colcon_core.verb:set package 'bill_gazebo' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.342s] DEBUG:colcon.colcon_core.verb:Building package 'bill_gazebo' with the following arguments: {'ament_cmake_args': None, 'build_base': '/nav_ws/build/bill_gazebo', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/nav_ws/install/bill_gazebo', 'merge_install': False, 'path': '/nav_ws/src/bill_gazebo', 'symlink_install': False, 'test_result_base': None}
+[0.342s] Level 5:colcon.colcon_core.verb:set package 'bill' build argument 'cmake_args' from command line to 'None'
+[0.342s] Level 5:colcon.colcon_core.verb:set package 'bill' build argument 'cmake_target' from command line to 'None'
+[0.342s] Level 5:colcon.colcon_core.verb:set package 'bill' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.342s] Level 5:colcon.colcon_core.verb:set package 'bill' build argument 'cmake_clean_cache' from command line to 'False'
+[0.342s] Level 5:colcon.colcon_core.verb:set package 'bill' build argument 'cmake_clean_first' from command line to 'False'
+[0.342s] Level 5:colcon.colcon_core.verb:set package 'bill' build argument 'cmake_force_configure' from command line to 'False'
+[0.342s] Level 5:colcon.colcon_core.verb:set package 'bill' build argument 'ament_cmake_args' from command line to 'None'
+[0.342s] Level 5:colcon.colcon_core.verb:set package 'bill' build argument 'catkin_cmake_args' from command line to 'None'
+[0.342s] Level 5:colcon.colcon_core.verb:set package 'bill' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.342s] DEBUG:colcon.colcon_core.verb:Building package 'bill' with the following arguments: {'ament_cmake_args': None, 'build_base': '/nav_ws/build/bill', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/nav_ws/install/bill', 'merge_install': False, 'path': '/nav_ws/src/bill', 'symlink_install': False, 'test_result_base': None}
+[0.342s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.344s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.344s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/nav_ws/src/bill_description' with build type 'ament_cmake'
+[0.344s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/nav_ws/src/bill_description'
+[0.348s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.349s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.349s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.355s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/nav_ws/src/bill_gazebo' with build type 'ament_cmake'
+[0.355s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/nav_ws/src/bill_gazebo'
+[0.356s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.356s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.361s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/nav_ws/build/bill_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake /nav_ws/src/bill_description -DCMAKE_INSTALL_PREFIX=/nav_ws/install/bill_description
+[0.367s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/nav_ws/build/bill_gazebo': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake /nav_ws/src/bill_gazebo -DCMAKE_INSTALL_PREFIX=/nav_ws/install/bill_gazebo
+[1.528s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/nav_ws/build/bill_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake /nav_ws/src/bill_description -DCMAKE_INSTALL_PREFIX=/nav_ws/install/bill_description
+[1.529s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/nav_ws/build/bill_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /nav_ws/build/bill_description -- -j16 -l16
+[1.546s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/nav_ws/build/bill_gazebo' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake /nav_ws/src/bill_gazebo -DCMAKE_INSTALL_PREFIX=/nav_ws/install/bill_gazebo
+[1.547s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/nav_ws/build/bill_gazebo': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /nav_ws/build/bill_gazebo -- -j16 -l16
+[1.582s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/nav_ws/build/bill_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /nav_ws/build/bill_description -- -j16 -l16
+[1.595s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/nav_ws/build/bill_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --install /nav_ws/build/bill_description
+[1.599s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/nav_ws/build/bill_gazebo' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /nav_ws/build/bill_gazebo -- -j16 -l16
+[1.600s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/nav_ws/build/bill_gazebo': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --install /nav_ws/build/bill_gazebo
+[1.616s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(bill_gazebo)
+[1.616s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/nav_ws/build/bill_gazebo' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --install /nav_ws/build/bill_gazebo
+[1.623s] Level 1:colcon.colcon_core.environment:checking '/nav_ws/install/bill_gazebo' for CMake module files
+[1.623s] Level 1:colcon.colcon_core.environment:checking '/nav_ws/install/bill_gazebo' for CMake config files
+[1.624s] Level 1:colcon.colcon_core.shell:create_environment_hook('bill_gazebo', 'cmake_prefix_path')
+[1.624s] INFO:colcon.colcon_core.shell:Creating environment hook '/nav_ws/install/bill_gazebo/share/bill_gazebo/hook/cmake_prefix_path.ps1'
+[1.625s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/nav_ws/install/bill_gazebo/share/bill_gazebo/hook/cmake_prefix_path.dsv'
+[1.625s] INFO:colcon.colcon_core.shell:Creating environment hook '/nav_ws/install/bill_gazebo/share/bill_gazebo/hook/cmake_prefix_path.sh'
+[1.626s] Level 1:colcon.colcon_core.environment:checking '/nav_ws/install/bill_gazebo/bin'
+[1.626s] Level 1:colcon.colcon_core.environment:checking '/nav_ws/install/bill_gazebo/lib/pkgconfig/bill_gazebo.pc'
+[1.628s] Level 1:colcon.colcon_core.environment:checking '/nav_ws/install/bill_gazebo/lib/python3.12/site-packages'
+[1.629s] Level 1:colcon.colcon_core.environment:checking '/nav_ws/install/bill_gazebo/bin'
+[1.629s] INFO:colcon.colcon_core.shell:Creating package script '/nav_ws/install/bill_gazebo/share/bill_gazebo/package.ps1'
+[1.630s] INFO:colcon.colcon_core.shell:Creating package descriptor '/nav_ws/install/bill_gazebo/share/bill_gazebo/package.dsv'
+[1.630s] INFO:colcon.colcon_core.shell:Creating package script '/nav_ws/install/bill_gazebo/share/bill_gazebo/package.sh'
+[1.631s] INFO:colcon.colcon_core.shell:Creating package script '/nav_ws/install/bill_gazebo/share/bill_gazebo/package.bash'
+[1.632s] INFO:colcon.colcon_core.shell:Creating package script '/nav_ws/install/bill_gazebo/share/bill_gazebo/package.zsh'
+[1.633s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/nav_ws/install/bill_gazebo/share/colcon-core/packages/bill_gazebo)
+[1.633s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(bill_gazebo)
+[1.633s] Level 1:colcon.colcon_core.environment:checking '/nav_ws/install/bill_gazebo' for CMake module files
+[1.634s] Level 1:colcon.colcon_core.environment:checking '/nav_ws/install/bill_gazebo' for CMake config files
+[1.635s] Level 1:colcon.colcon_core.shell:create_environment_hook('bill_gazebo', 'cmake_prefix_path')
+[1.635s] INFO:colcon.colcon_core.shell:Creating environment hook '/nav_ws/install/bill_gazebo/share/bill_gazebo/hook/cmake_prefix_path.ps1'
+[1.635s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/nav_ws/install/bill_gazebo/share/bill_gazebo/hook/cmake_prefix_path.dsv'
+[1.635s] INFO:colcon.colcon_core.shell:Creating environment hook '/nav_ws/install/bill_gazebo/share/bill_gazebo/hook/cmake_prefix_path.sh'
+[1.636s] Level 1:colcon.colcon_core.environment:checking '/nav_ws/install/bill_gazebo/bin'
+[1.636s] Level 1:colcon.colcon_core.environment:checking '/nav_ws/install/bill_gazebo/lib/pkgconfig/bill_gazebo.pc'
+[1.636s] Level 1:colcon.colcon_core.environment:checking '/nav_ws/install/bill_gazebo/lib/python3.12/site-packages'
+[1.636s] Level 1:colcon.colcon_core.environment:checking '/nav_ws/install/bill_gazebo/bin'
+[1.636s] INFO:colcon.colcon_core.shell:Creating package script '/nav_ws/install/bill_gazebo/share/bill_gazebo/package.ps1'
+[1.637s] INFO:colcon.colcon_core.shell:Creating package descriptor '/nav_ws/install/bill_gazebo/share/bill_gazebo/package.dsv'
+[1.637s] INFO:colcon.colcon_core.shell:Creating package script '/nav_ws/install/bill_gazebo/share/bill_gazebo/package.sh'
+[1.637s] INFO:colcon.colcon_core.shell:Creating package script '/nav_ws/install/bill_gazebo/share/bill_gazebo/package.bash'
+[1.638s] INFO:colcon.colcon_core.shell:Creating package script '/nav_ws/install/bill_gazebo/share/bill_gazebo/package.zsh'
+[1.638s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/nav_ws/install/bill_gazebo/share/colcon-core/packages/bill_gazebo)
+[1.646s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(bill_description)
+[1.647s] Level 1:colcon.colcon_core.environment:checking '/nav_ws/install/bill_description' for CMake module files
+[1.647s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/nav_ws/build/bill_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --install /nav_ws/build/bill_description
+[1.647s] Level 1:colcon.colcon_core.environment:checking '/nav_ws/install/bill_description' for CMake config files
+[1.648s] Level 1:colcon.colcon_core.shell:create_environment_hook('bill_description', 'cmake_prefix_path')
+[1.648s] INFO:colcon.colcon_core.shell:Creating environment hook '/nav_ws/install/bill_description/share/bill_description/hook/cmake_prefix_path.ps1'
+[1.648s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/nav_ws/install/bill_description/share/bill_description/hook/cmake_prefix_path.dsv'
+[1.649s] INFO:colcon.colcon_core.shell:Creating environment hook '/nav_ws/install/bill_description/share/bill_description/hook/cmake_prefix_path.sh'
+[1.649s] Level 1:colcon.colcon_core.environment:checking '/nav_ws/install/bill_description/bin'
+[1.649s] Level 1:colcon.colcon_core.environment:checking '/nav_ws/install/bill_description/lib/pkgconfig/bill_description.pc'
+[1.649s] Level 1:colcon.colcon_core.environment:checking '/nav_ws/install/bill_description/lib/python3.12/site-packages'
+[1.649s] Level 1:colcon.colcon_core.environment:checking '/nav_ws/install/bill_description/bin'
+[1.650s] INFO:colcon.colcon_core.shell:Creating package script '/nav_ws/install/bill_description/share/bill_description/package.ps1'
+[1.650s] INFO:colcon.colcon_core.shell:Creating package descriptor '/nav_ws/install/bill_description/share/bill_description/package.dsv'
+[1.650s] INFO:colcon.colcon_core.shell:Creating package script '/nav_ws/install/bill_description/share/bill_description/package.sh'
+[1.650s] INFO:colcon.colcon_core.shell:Creating package script '/nav_ws/install/bill_description/share/bill_description/package.bash'
+[1.651s] INFO:colcon.colcon_core.shell:Creating package script '/nav_ws/install/bill_description/share/bill_description/package.zsh'
+[1.651s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/nav_ws/install/bill_description/share/colcon-core/packages/bill_description)
+[1.651s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(bill_description)
+[1.652s] Level 1:colcon.colcon_core.environment:checking '/nav_ws/install/bill_description' for CMake module files
+[1.652s] Level 1:colcon.colcon_core.environment:checking '/nav_ws/install/bill_description' for CMake config files
+[1.652s] Level 1:colcon.colcon_core.shell:create_environment_hook('bill_description', 'cmake_prefix_path')
+[1.653s] INFO:colcon.colcon_core.shell:Creating environment hook '/nav_ws/install/bill_description/share/bill_description/hook/cmake_prefix_path.ps1'
+[1.653s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/nav_ws/install/bill_description/share/bill_description/hook/cmake_prefix_path.dsv'
+[1.653s] INFO:colcon.colcon_core.shell:Creating environment hook '/nav_ws/install/bill_description/share/bill_description/hook/cmake_prefix_path.sh'
+[1.654s] Level 1:colcon.colcon_core.environment:checking '/nav_ws/install/bill_description/bin'
+[1.654s] Level 1:colcon.colcon_core.environment:checking '/nav_ws/install/bill_description/lib/pkgconfig/bill_description.pc'
+[1.654s] Level 1:colcon.colcon_core.environment:checking '/nav_ws/install/bill_description/lib/python3.12/site-packages'
+[1.654s] Level 1:colcon.colcon_core.environment:checking '/nav_ws/install/bill_description/bin'
+[1.654s] INFO:colcon.colcon_core.shell:Creating package script '/nav_ws/install/bill_description/share/bill_description/package.ps1'
+[1.655s] INFO:colcon.colcon_core.shell:Creating package descriptor '/nav_ws/install/bill_description/share/bill_description/package.dsv'
+[1.655s] INFO:colcon.colcon_core.shell:Creating package script '/nav_ws/install/bill_description/share/bill_description/package.sh'
+[1.656s] INFO:colcon.colcon_core.shell:Creating package script '/nav_ws/install/bill_description/share/bill_description/package.bash'
+[1.656s] INFO:colcon.colcon_core.shell:Creating package script '/nav_ws/install/bill_description/share/bill_description/package.zsh'
+[1.656s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/nav_ws/install/bill_description/share/colcon-core/packages/bill_description)
+[1.657s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/nav_ws/src/bill' with build type 'ament_cmake'
+[1.657s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/nav_ws/src/bill'
+[1.657s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.657s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.668s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/nav_ws/build/bill': AMENT_PREFIX_PATH=/nav_ws/install/bill_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/nav_ws/install/bill_description:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy /usr/bin/cmake /nav_ws/src/bill -DCMAKE_INSTALL_PREFIX=/nav_ws/install/bill
+[2.593s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/nav_ws/build/bill' returned '0': AMENT_PREFIX_PATH=/nav_ws/install/bill_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/nav_ws/install/bill_description:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy /usr/bin/cmake /nav_ws/src/bill -DCMAKE_INSTALL_PREFIX=/nav_ws/install/bill
+[2.593s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/nav_ws/build/bill': AMENT_PREFIX_PATH=/nav_ws/install/bill_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/nav_ws/install/bill_description:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy /usr/bin/cmake --build /nav_ws/build/bill -- -j16 -l16
+[2.642s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/nav_ws/build/bill' returned '0': AMENT_PREFIX_PATH=/nav_ws/install/bill_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/nav_ws/install/bill_description:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy /usr/bin/cmake --build /nav_ws/build/bill -- -j16 -l16
+[2.644s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/nav_ws/build/bill': AMENT_PREFIX_PATH=/nav_ws/install/bill_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/nav_ws/install/bill_description:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy /usr/bin/cmake --install /nav_ws/build/bill
+[2.657s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(bill)
+[2.658s] Level 1:colcon.colcon_core.environment:checking '/nav_ws/install/bill' for CMake module files
+[2.658s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/nav_ws/build/bill' returned '0': AMENT_PREFIX_PATH=/nav_ws/install/bill_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/nav_ws/install/bill_description:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy /usr/bin/cmake --install /nav_ws/build/bill
+[2.658s] Level 1:colcon.colcon_core.environment:checking '/nav_ws/install/bill' for CMake config files
+[2.659s] Level 1:colcon.colcon_core.shell:create_environment_hook('bill', 'cmake_prefix_path')
+[2.659s] INFO:colcon.colcon_core.shell:Creating environment hook '/nav_ws/install/bill/share/bill/hook/cmake_prefix_path.ps1'
+[2.659s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/nav_ws/install/bill/share/bill/hook/cmake_prefix_path.dsv'
+[2.659s] INFO:colcon.colcon_core.shell:Creating environment hook '/nav_ws/install/bill/share/bill/hook/cmake_prefix_path.sh'
+[2.660s] Level 1:colcon.colcon_core.environment:checking '/nav_ws/install/bill/bin'
+[2.660s] Level 1:colcon.colcon_core.environment:checking '/nav_ws/install/bill/lib/pkgconfig/bill.pc'
+[2.660s] Level 1:colcon.colcon_core.environment:checking '/nav_ws/install/bill/lib/python3.12/site-packages'
+[2.660s] Level 1:colcon.colcon_core.environment:checking '/nav_ws/install/bill/bin'
+[2.660s] INFO:colcon.colcon_core.shell:Creating package script '/nav_ws/install/bill/share/bill/package.ps1'
+[2.661s] INFO:colcon.colcon_core.shell:Creating package descriptor '/nav_ws/install/bill/share/bill/package.dsv'
+[2.661s] INFO:colcon.colcon_core.shell:Creating package script '/nav_ws/install/bill/share/bill/package.sh'
+[2.661s] INFO:colcon.colcon_core.shell:Creating package script '/nav_ws/install/bill/share/bill/package.bash'
+[2.661s] INFO:colcon.colcon_core.shell:Creating package script '/nav_ws/install/bill/share/bill/package.zsh'
+[2.662s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/nav_ws/install/bill/share/colcon-core/packages/bill)
+[2.662s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(bill)
+[2.662s] Level 1:colcon.colcon_core.environment:checking '/nav_ws/install/bill' for CMake module files
+[2.663s] Level 1:colcon.colcon_core.environment:checking '/nav_ws/install/bill' for CMake config files
+[2.663s] Level 1:colcon.colcon_core.shell:create_environment_hook('bill', 'cmake_prefix_path')
+[2.663s] INFO:colcon.colcon_core.shell:Creating environment hook '/nav_ws/install/bill/share/bill/hook/cmake_prefix_path.ps1'
+[2.663s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/nav_ws/install/bill/share/bill/hook/cmake_prefix_path.dsv'
+[2.663s] INFO:colcon.colcon_core.shell:Creating environment hook '/nav_ws/install/bill/share/bill/hook/cmake_prefix_path.sh'
+[2.664s] Level 1:colcon.colcon_core.environment:checking '/nav_ws/install/bill/bin'
+[2.664s] Level 1:colcon.colcon_core.environment:checking '/nav_ws/install/bill/lib/pkgconfig/bill.pc'
+[2.664s] Level 1:colcon.colcon_core.environment:checking '/nav_ws/install/bill/lib/python3.12/site-packages'
+[2.664s] Level 1:colcon.colcon_core.environment:checking '/nav_ws/install/bill/bin'
+[2.664s] INFO:colcon.colcon_core.shell:Creating package script '/nav_ws/install/bill/share/bill/package.ps1'
+[2.665s] INFO:colcon.colcon_core.shell:Creating package descriptor '/nav_ws/install/bill/share/bill/package.dsv'
+[2.665s] INFO:colcon.colcon_core.shell:Creating package script '/nav_ws/install/bill/share/bill/package.sh'
+[2.665s] INFO:colcon.colcon_core.shell:Creating package script '/nav_ws/install/bill/share/bill/package.bash'
+[2.666s] INFO:colcon.colcon_core.shell:Creating package script '/nav_ws/install/bill/share/bill/package.zsh'
+[2.666s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/nav_ws/install/bill/share/colcon-core/packages/bill)
+[2.666s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[2.666s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[2.666s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[2.666s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[2.682s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.notify_send': Could not find 'notify-send'
+[2.682s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[2.682s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[2.682s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[2.690s] DEBUG:colcon.colcon_notification.desktop_notification.notify2:Failed to initialize notify2: org.freedesktop.DBus.Error.Spawn.ExecFailed: /usr/bin/dbus-launch terminated abnormally without any error message
+[2.690s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[2.691s] INFO:colcon.colcon_core.shell:Creating prefix script '/nav_ws/install/local_setup.ps1'
+[2.692s] INFO:colcon.colcon_core.shell:Creating prefix util module '/nav_ws/install/_local_setup_util_ps1.py'
+[2.693s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/nav_ws/install/setup.ps1'
+[2.694s] INFO:colcon.colcon_core.shell:Creating prefix script '/nav_ws/install/local_setup.sh'
+[2.695s] INFO:colcon.colcon_core.shell:Creating prefix util module '/nav_ws/install/_local_setup_util_sh.py'
+[2.695s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/nav_ws/install/setup.sh'
+[2.696s] INFO:colcon.colcon_core.shell:Creating prefix script '/nav_ws/install/local_setup.bash'
+[2.697s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/nav_ws/install/setup.bash'
+[2.699s] INFO:colcon.colcon_core.shell:Creating prefix script '/nav_ws/install/local_setup.zsh'
+[2.700s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/nav_ws/install/setup.zsh'

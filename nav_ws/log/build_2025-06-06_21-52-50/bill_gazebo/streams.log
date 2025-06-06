@@ -1,0 +1,51 @@
+[0.011s] Invoking command in '/nav_ws/build/bill_gazebo': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake /nav_ws/src/bill_gazebo -DCMAKE_INSTALL_PREFIX=/nav_ws/install/bill_gazebo
+[0.191s] -- The C compiler identification is GNU 13.3.0
+[0.292s] -- The CXX compiler identification is GNU 13.3.0
+[0.318s] -- Detecting C compiler ABI info
+[0.442s] -- Detecting C compiler ABI info - done
+[0.451s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.452s] -- Detecting C compile features
+[0.452s] -- Detecting C compile features - done
+[0.465s] -- Detecting CXX compiler ABI info
+[0.589s] -- Detecting CXX compiler ABI info - done
+[0.598s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.598s] -- Detecting CXX compile features
+[0.599s] -- Detecting CXX compile features - done
+[0.615s] -- Found ament_cmake: 2.5.4 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[0.795s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+[1.004s] -- Found ament_lint_auto: 0.17.2 (/opt/ros/jazzy/share/ament_lint_auto/cmake)
+[1.159s] -- Added test 'flake8' to check Python code syntax and style conventions
+[1.159s] -- Configured 'flake8' exclude dirs and/or files: 
+[1.162s] -- Added test 'lint_cmake' to check CMake code style
+[1.165s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[1.178s] -- Added test 'xmllint' to check XML markup files
+[1.180s] -- Configuring done (1.1s)
+[1.184s] -- Generating done (0.0s)
+[1.186s] -- Build files have been written to: /nav_ws/build/bill_gazebo
+[1.191s] Invoked command in '/nav_ws/build/bill_gazebo' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake /nav_ws/src/bill_gazebo -DCMAKE_INSTALL_PREFIX=/nav_ws/install/bill_gazebo
+[1.191s] Invoking command in '/nav_ws/build/bill_gazebo': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /nav_ws/build/bill_gazebo -- -j16 -l16
+[1.243s] Invoked command in '/nav_ws/build/bill_gazebo' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /nav_ws/build/bill_gazebo -- -j16 -l16
+[1.244s] Invoking command in '/nav_ws/build/bill_gazebo': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --install /nav_ws/build/bill_gazebo
+[1.255s] -- Install configuration: ""
+[1.255s] -- Installing: /nav_ws/install/bill_gazebo/share/bill_gazebo/worlds
+[1.255s] -- Installing: /nav_ws/install/bill_gazebo/share/bill_gazebo/worlds/world.sdf
+[1.255s] -- Installing: /nav_ws/install/bill_gazebo/share/bill_gazebo/worlds/empty.sdf
+[1.255s] -- Installing: /nav_ws/install/bill_gazebo/share/bill_gazebo/launch
+[1.256s] -- Installing: /nav_ws/install/bill_gazebo/share/bill_gazebo/launch/spawn_robot.launch.py
+[1.256s] -- Installing: /nav_ws/install/bill_gazebo/share/bill_gazebo/launch/world.launch.py
+[1.256s] -- Installing: /nav_ws/install/bill_gazebo/share/ament_index/resource_index/package_run_dependencies/bill_gazebo
+[1.256s] -- Installing: /nav_ws/install/bill_gazebo/share/ament_index/resource_index/parent_prefix_path/bill_gazebo
+[1.256s] -- Installing: /nav_ws/install/bill_gazebo/share/bill_gazebo/environment/ament_prefix_path.sh
+[1.256s] -- Installing: /nav_ws/install/bill_gazebo/share/bill_gazebo/environment/ament_prefix_path.dsv
+[1.257s] -- Installing: /nav_ws/install/bill_gazebo/share/bill_gazebo/environment/path.sh
+[1.257s] -- Installing: /nav_ws/install/bill_gazebo/share/bill_gazebo/environment/path.dsv
+[1.257s] -- Installing: /nav_ws/install/bill_gazebo/share/bill_gazebo/local_setup.bash
+[1.257s] -- Installing: /nav_ws/install/bill_gazebo/share/bill_gazebo/local_setup.sh
+[1.257s] -- Installing: /nav_ws/install/bill_gazebo/share/bill_gazebo/local_setup.zsh
+[1.257s] -- Installing: /nav_ws/install/bill_gazebo/share/bill_gazebo/local_setup.dsv
+[1.257s] -- Installing: /nav_ws/install/bill_gazebo/share/bill_gazebo/package.dsv
+[1.257s] -- Installing: /nav_ws/install/bill_gazebo/share/ament_index/resource_index/packages/bill_gazebo
+[1.258s] -- Installing: /nav_ws/install/bill_gazebo/share/bill_gazebo/cmake/bill_gazeboConfig.cmake
+[1.258s] -- Installing: /nav_ws/install/bill_gazebo/share/bill_gazebo/cmake/bill_gazeboConfig-version.cmake
+[1.258s] -- Installing: /nav_ws/install/bill_gazebo/share/bill_gazebo/package.xml
+[1.260s] Invoked command in '/nav_ws/build/bill_gazebo' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --install /nav_ws/build/bill_gazebo

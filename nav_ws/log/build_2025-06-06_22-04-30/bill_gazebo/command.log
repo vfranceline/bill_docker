@@ -1,0 +1,4 @@
+Invoking command in '/nav_ws/build/bill_gazebo': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /nav_ws/build/bill_gazebo -- -j16 -l16
+Invoked command in '/nav_ws/build/bill_gazebo' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /nav_ws/build/bill_gazebo -- -j16 -l16
+Invoking command in '/nav_ws/build/bill_gazebo': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --install /nav_ws/build/bill_gazebo
+Invoked command in '/nav_ws/build/bill_gazebo' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --install /nav_ws/build/bill_gazebo
