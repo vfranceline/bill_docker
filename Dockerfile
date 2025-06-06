@@ -26,9 +26,9 @@ RUN locale-gen en_US en_US.UTF-8 && \
 # Adiciona o ROS 2 ao ambiente
 RUN echo "source /opt/ros/jazzy/setup.bash" >> /root/.bashrc
 
-# Cria um diretório de trabalho
-WORKDIR /root/ros2_ws
+COPY install_dependencies.sh /tmp/install_dependencies.sh
+COPY dependencies /tmp/dependencies
 
-# Comando padrão ao iniciar o contêiner
-CMD ["/bin/bash"]
+RUN chmod +x /tmp/install_dependencies.sh && cd /tmp && \
+    bash install_dependencies.sh && cd /
 
