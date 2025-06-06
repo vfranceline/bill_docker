@@ -1,19 +1,20 @@
 <?xml version="1.0"?>
 <robot xmlns:xacro="http://www.ros.org/wiki/xacro">
 
-  <xacro:property name="wheel_radius" value="0.0325" />
-  <xacro:property name="wheel_separation" value="0.169" />
-  <xacro:property name="wheel_width" value="0.03040" />
-  <xacro:property name="wheel_mass" value="9.1" />
-  <xacro:property name="wheel_xoff" value="0.08" />
-  <xacro:property name="wheel_yoff" value="-0.01" />
+  <!-- Novos parâmetros da roda -->
+  <xacro:property name="wheel_radius" value="0.07"/>
+  <xacro:property name="wheel_thickness" value="0.05"/>
+  <xacro:property name="wheel_mass" value="0.2"/>
+  <xacro:property name="wheel_offset_x" value="0.2"/>
+  <xacro:property name="wheel_offset_y" value="${chassis_width/2 + wheel_thickness/2}"/>
+  <xacro:property name="wheel_offset_z" value="0.0"/>
 
   <xacro:macro name="mecanum_wheel" params="prefix side x_reflect y_reflect">
     <link name="${prefix}${side}_wheel_link">
       <visual>
         <origin xyz="0 0 0" rpy="${pi/2} 0 0"/>
         <geometry>
-          <mesh filename="file://$(find bill_description)/meshes/robot_3d/visual/${side}_wheel_X3.STL"/>
+          <cylinder radius="${wheel_radius}" length="${wheel_thickness}"/>
         </geometry>
         <material name="dark_gray">
           <color rgba="0.2 0.2 0.2 1.0"/>
@@ -23,7 +24,7 @@
       <collision>
         <origin xyz="0 0 0" rpy="${pi/2} 0 0"/>
         <geometry>
-          <cylinder radius="${wheel_radius}" length="${wheel_width}"/>
+          <cylinder radius="${wheel_radius}" length="${wheel_thickness}"/>
         </geometry>
       </collision>
 
@@ -31,9 +32,9 @@
         <origin xyz="0 0 0" rpy="0 0 0"/>
         <mass value="${wheel_mass}"/>
         <inertia
-          ixx="${(wheel_mass/12.0) * (3*wheel_radius*wheel_radius + wheel_width*wheel_width)}" ixy="0" ixz="0"
+          ixx="${(wheel_mass/12.0) * (3*wheel_radius*wheel_radius + wheel_thickness*wheel_thickness)}" ixy="0" ixz="0"
           iyy="${(wheel_mass/2.0) * (wheel_radius*wheel_radius)}" iyz="0"
-          izz="${(wheel_mass/12.0) * (3*wheel_radius*wheel_radius + wheel_width*wheel_width)}"/>
+          izz="${(wheel_mass/12.0) * (3*wheel_radius*wheel_radius + wheel_thickness*wheel_thickness)}"/>
       </inertial>
     </link>
 
@@ -41,27 +42,26 @@
       <axis xyz="0 1 0"/>
       <parent link="${prefix}base_link"/>
       <child link="${prefix}${side}_wheel_link"/>
-      <origin xyz="${x_reflect*wheel_xoff} ${y_reflect*(wheel_separation/2+wheel_yoff)} ${-wheel_radius}" rpy="0 0 0"/>
+      <origin xyz="${x_reflect*wheel_offset_x} ${y_reflect*wheel_offset_y} ${wheel_offset_z - wheel_radius}" rpy="0 0 0"/>
     </joint>
 
     <gazebo reference="${prefix}${side}_wheel_link">
       <surface>
         <friction>
           <ode>
-              <mu>1.0</mu>
-              <mu2>0.0</mu2>
+            <mu>1.0</mu>
+            <mu2>0.0</mu2>
           </ode>
         </friction>
       </surface>
       <visual>
-          <material>
-              <ambient>0.2 0.2 0.2 1.0</ambient>
-              <diffuse>0.2 0.2 0.2 1.0</diffuse>
-              <specular>0.2 0.2 0.2 1.0</specular>
-              <emissive>0.0 0.0 0.0 0.0</emissive>
-          </material>
+        <material>
+          <ambient>0.2 0.2 0.2 1.0</ambient>
+          <diffuse>0.2 0.2 0.2 1.0</diffuse>
+          <specular>0.2 0.2 0.2 1.0</specular>
+          <emissive>0.0 0.0 0.0 0.0</emissive>
+        </material>
       </visual>
-  </gazebo>
-
+    </gazebo>
   </xacro:macro>
 </robot>

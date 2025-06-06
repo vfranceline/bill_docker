@@ -1,4 +1,3 @@
-/nav_ws/install/bill_description/share/bill_description/meshes/rplidar/rplidar_s2.stl
 /nav_ws/install/bill_description/share/bill_description/meshes/robot_3d/visual/back_right_wheel_X3.STL
 /nav_ws/install/bill_description/share/bill_description/meshes/robot_3d/visual/front_right_wheel_X3.STL
 /nav_ws/install/bill_description/share/bill_description/meshes/robot_3d/visual/laser_link.STL

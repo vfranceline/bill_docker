@@ -6,18 +6,14 @@
     prefix:=''
     parent:='base_link'
     frame_id:='laser_frame'
-    mesh_file:='file://$(find bill_description)/meshes/rplidar/rplidar_s2.stl'
     xyz_offset:='0 0 0.0825'
     rpy_offset:='0 0 0'
-    mesh_xyz_offset:='0 0 0'
-    mesh_rpy_offset:='${-M_PI/2} 0 0'
-    mesh_scale:='0.001 0.001 0.001'
+    lidar_width:=0.077
+    lidar_height:=0.0398
     collision_xyz_offset:='0 0 0'
     collision_rpy_offset:='0 0 0'
     inertial_xyz_offset:='0 0 0'
     inertial_rpy_offset:='0 0 0'
-    lidar_width:=0.077
-    lidar_height:=0.0398
     mass:=0.185
     material_name:='rplidar_black'
     material_color:='0.1 0.1 0.1 1'
@@ -42,9 +38,9 @@
 
     <link name="${prefix}${frame_id}">
       <visual>
-        <origin xyz="${mesh_xyz_offset}" rpy="${mesh_rpy_offset}"/>
+        <origin xyz="0 0 0" rpy="0 0 0"/>
         <geometry>
-          <mesh filename="${mesh_file}" scale="${mesh_scale}"/>
+          <cylinder radius="${radius}" length="${lidar_height}"/>
         </geometry>
         <material name="${material_name}">
           <color rgba="${material_color}"/>
