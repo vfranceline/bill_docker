@@ -1,9 +1,0 @@
-/nav_ws/build/bill/CMakeFiles/uninstall.dir
-/nav_ws/build/bill/CMakeFiles/bill_uninstall.dir
-/nav_ws/build/bill/CMakeFiles/test.dir
-/nav_ws/build/bill/CMakeFiles/edit_cache.dir
-/nav_ws/build/bill/CMakeFiles/rebuild_cache.dir
-/nav_ws/build/bill/CMakeFiles/list_install_components.dir
-/nav_ws/build/bill/CMakeFiles/install.dir
-/nav_ws/build/bill/CMakeFiles/install/local.dir
-/nav_ws/build/bill/CMakeFiles/install/strip.dir

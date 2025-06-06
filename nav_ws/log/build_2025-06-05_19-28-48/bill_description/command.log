@@ -1,2 +1,0 @@
-Invoking command in '/nav_ws/build/bill_description': /usr/bin/cmake /nav_ws/src/bill_description -DCMAKE_INSTALL_PREFIX=/nav_ws/install/bill_description
-Invoked command in '/nav_ws/build/bill_description' returned '1': /usr/bin/cmake /nav_ws/src/bill_description -DCMAKE_INSTALL_PREFIX=/nav_ws/install/bill_description
