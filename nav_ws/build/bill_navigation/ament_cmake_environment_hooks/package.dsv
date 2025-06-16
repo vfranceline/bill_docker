@@ -1,0 +1,4 @@
+source;share/bill_navigation/local_setup.bash
+source;share/bill_navigation/local_setup.dsv
+source;share/bill_navigation/local_setup.sh
+source;share/bill_navigation/local_setup.zsh

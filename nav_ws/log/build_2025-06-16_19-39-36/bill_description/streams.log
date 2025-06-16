@@ -1,0 +1,47 @@
+[0.032s] Invoking command in '/nav_ws/build/bill_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /nav_ws/build/bill_description -- -j16 -l16
+[0.141s] Invoked command in '/nav_ws/build/bill_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /nav_ws/build/bill_description -- -j16 -l16
+[0.162s] Invoking command in '/nav_ws/build/bill_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --install /nav_ws/build/bill_description
+[0.179s] -- Install configuration: ""
+[0.179s] -- Up-to-date: /nav_ws/install/bill_description/share/bill_description/meshes
+[0.179s] -- Up-to-date: /nav_ws/install/bill_description/share/bill_description/meshes/robot_3d
+[0.180s] -- Up-to-date: /nav_ws/install/bill_description/share/bill_description/meshes/robot_3d/visual
+[0.180s] -- Up-to-date: /nav_ws/install/bill_description/share/bill_description/meshes/robot_3d/visual/back_right_wheel_X3.STL
+[0.180s] -- Up-to-date: /nav_ws/install/bill_description/share/bill_description/meshes/robot_3d/visual/front_right_wheel_X3.STL
+[0.180s] -- Up-to-date: /nav_ws/install/bill_description/share/bill_description/meshes/robot_3d/visual/laser_link.STL
+[0.181s] -- Up-to-date: /nav_ws/install/bill_description/share/bill_description/meshes/robot_3d/visual/back_left_wheel_X3.STL
+[0.181s] -- Up-to-date: /nav_ws/install/bill_description/share/bill_description/meshes/robot_3d/visual/front_left_wheel_X3.STL
+[0.181s] -- Up-to-date: /nav_ws/install/bill_description/share/bill_description/meshes/robot_3d/visual/base_link_X3.STL
+[0.181s] -- Up-to-date: /nav_ws/install/bill_description/share/bill_description/meshes/robot_3d/visual/camera_link.STL
+[0.181s] -- Up-to-date: /nav_ws/install/bill_description/share/bill_description/urdf
+[0.181s] -- Up-to-date: /nav_ws/install/bill_description/share/bill_description/urdf/robots
+[0.182s] -- Up-to-date: /nav_ws/install/bill_description/share/bill_description/urdf/robots/robot_3d.urdf.xacro
+[0.182s] -- Up-to-date: /nav_ws/install/bill_description/share/bill_description/urdf/sensors
+[0.182s] -- Up-to-date: /nav_ws/install/bill_description/share/bill_description/urdf/sensors/lidar.urdf.xacro
+[0.182s] -- Up-to-date: /nav_ws/install/bill_description/share/bill_description/urdf/materials.xacro
+[0.182s] -- Up-to-date: /nav_ws/install/bill_description/share/bill_description/urdf/mech
+[0.183s] -- Up-to-date: /nav_ws/install/bill_description/share/bill_description/urdf/mech/robot_3d_base.urdf.xacro
+[0.183s] -- Up-to-date: /nav_ws/install/bill_description/share/bill_description/urdf/mech/mecanum_wheel.urdf.xacro
+[0.183s] -- Up-to-date: /nav_ws/install/bill_description/share/bill_description/urdf/control
+[0.183s] -- Up-to-date: /nav_ws/install/bill_description/share/bill_description/urdf/control/bill.gazebo
+[0.183s] -- Up-to-date: /nav_ws/install/bill_description/share/bill_description/launch
+[0.183s] -- Up-to-date: /nav_ws/install/bill_description/share/bill_description/launch/check_urdf.launch.py
+[0.183s] -- Up-to-date: /nav_ws/install/bill_description/share/bill_description/launch/robot_state_publisher.launch.py
+[0.183s] -- Up-to-date: /nav_ws/install/bill_description/share/bill_description/rviz
+[0.183s] -- Up-to-date: /nav_ws/install/bill_description/share/bill_description/rviz/bill.rviz
+[0.184s] -- Up-to-date: /nav_ws/install/bill_description/share/bill_description/rviz/rviz.rviz
+[0.184s] -- Up-to-date: /nav_ws/install/bill_description/share/ament_index/resource_index/package_run_dependencies/bill_description
+[0.184s] -- Up-to-date: /nav_ws/install/bill_description/share/ament_index/resource_index/parent_prefix_path/bill_description
+[0.189s] -- Up-to-date: /nav_ws/install/bill_description/share/bill_description/environment/ament_prefix_path.sh
+[0.190s] -- Up-to-date: /nav_ws/install/bill_description/share/bill_description/environment/ament_prefix_path.dsv
+[0.190s] -- Up-to-date: /nav_ws/install/bill_description/share/bill_description/environment/path.sh
+[0.190s] -- Up-to-date: /nav_ws/install/bill_description/share/bill_description/environment/path.dsv
+[0.190s] -- Up-to-date: /nav_ws/install/bill_description/share/bill_description/local_setup.bash
+[0.190s] -- Up-to-date: /nav_ws/install/bill_description/share/bill_description/local_setup.sh
+[0.190s] -- Up-to-date: /nav_ws/install/bill_description/share/bill_description/local_setup.zsh
+[0.191s] -- Up-to-date: /nav_ws/install/bill_description/share/bill_description/local_setup.dsv
+[0.191s] -- Installing: /nav_ws/install/bill_description/share/bill_description/package.dsv
+[0.191s] -- Up-to-date: /nav_ws/install/bill_description/share/ament_index/resource_index/packages/bill_description
+[0.191s] -- Up-to-date: /nav_ws/install/bill_description/share/bill_description/cmake/bill_descriptionConfig.cmake
+[0.191s] -- Up-to-date: /nav_ws/install/bill_description/share/bill_description/cmake/bill_descriptionConfig-version.cmake
+[0.192s] -- Up-to-date: /nav_ws/install/bill_description/share/bill_description/package.xml
+[0.222s] Invoked command in '/nav_ws/build/bill_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --install /nav_ws/build/bill_description

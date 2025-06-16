@@ -1,0 +1,53 @@
+[0.036s] Invoking command in '/nav_ws/build/bill_navigation': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake /nav_ws/src/bill_navigation -DCMAKE_INSTALL_PREFIX=/nav_ws/install/bill_navigation
+[0.374s] -- The C compiler identification is GNU 13.3.0
+[0.603s] -- The CXX compiler identification is GNU 13.3.0
+[0.657s] -- Detecting C compiler ABI info
+[0.953s] -- Detecting C compiler ABI info - done
+[0.979s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.981s] -- Detecting C compile features
+[0.983s] -- Detecting C compile features - done
+[1.014s] -- Detecting CXX compiler ABI info
+[1.336s] -- Detecting CXX compiler ABI info - done
+[1.363s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[1.364s] -- Detecting CXX compile features
+[1.365s] -- Detecting CXX compile features - done
+[1.404s] -- Found ament_cmake: 2.5.4 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[1.901s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+[2.405s] -- Found ament_lint_auto: 0.17.2 (/opt/ros/jazzy/share/ament_lint_auto/cmake)
+[2.806s] -- Added test 'flake8' to check Python code syntax and style conventions
+[2.807s] -- Configured 'flake8' exclude dirs and/or files: 
+[2.809s] -- Added test 'lint_cmake' to check CMake code style
+[2.812s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[2.817s] -- Added test 'xmllint' to check XML markup files
+[2.824s] -- Configuring done (2.7s)
+[2.834s] -- Generating done (0.0s)
+[2.839s] -- Build files have been written to: /nav_ws/build/bill_navigation
+[2.852s] Invoked command in '/nav_ws/build/bill_navigation' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake /nav_ws/src/bill_navigation -DCMAKE_INSTALL_PREFIX=/nav_ws/install/bill_navigation
+[2.854s] Invoking command in '/nav_ws/build/bill_navigation': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /nav_ws/build/bill_navigation -- -j16 -l16
+[2.983s] Invoked command in '/nav_ws/build/bill_navigation' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /nav_ws/build/bill_navigation -- -j16 -l16
+[3.015s] Invoking command in '/nav_ws/build/bill_navigation': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --install /nav_ws/build/bill_navigation
+[3.040s] -- Install configuration: ""
+[3.041s] -- Installing: /nav_ws/install/bill_navigation/share/bill_navigation/launch
+[3.041s] -- Installing: /nav_ws/install/bill_navigation/share/bill_navigation/launch/mapping.launch.py
+[3.042s] -- Installing: /nav_ws/install/bill_navigation/share/bill_navigation/launch/spawn_robot.launch.py
+[3.042s] -- Installing: /nav_ws/install/bill_navigation/share/bill_navigation/config
+[3.043s] -- Installing: /nav_ws/install/bill_navigation/share/bill_navigation/config/ekf.yaml
+[3.043s] -- Installing: /nav_ws/install/bill_navigation/share/bill_navigation/config/slam_toolbox_mapping.yaml
+[3.044s] -- Installing: /nav_ws/install/bill_navigation/share/bill_navigation/rviz
+[3.044s] -- Installing: /nav_ws/install/bill_navigation/share/bill_navigation/rviz/mapping.rviz
+[3.045s] -- Installing: /nav_ws/install/bill_navigation/share/ament_index/resource_index/package_run_dependencies/bill_navigation
+[3.046s] -- Installing: /nav_ws/install/bill_navigation/share/ament_index/resource_index/parent_prefix_path/bill_navigation
+[3.047s] -- Installing: /nav_ws/install/bill_navigation/share/bill_navigation/environment/ament_prefix_path.sh
+[3.047s] -- Installing: /nav_ws/install/bill_navigation/share/bill_navigation/environment/ament_prefix_path.dsv
+[3.047s] -- Installing: /nav_ws/install/bill_navigation/share/bill_navigation/environment/path.sh
+[3.047s] -- Installing: /nav_ws/install/bill_navigation/share/bill_navigation/environment/path.dsv
+[3.048s] -- Installing: /nav_ws/install/bill_navigation/share/bill_navigation/local_setup.bash
+[3.048s] -- Installing: /nav_ws/install/bill_navigation/share/bill_navigation/local_setup.sh
+[3.048s] -- Installing: /nav_ws/install/bill_navigation/share/bill_navigation/local_setup.zsh
+[3.049s] -- Installing: /nav_ws/install/bill_navigation/share/bill_navigation/local_setup.dsv
+[3.049s] -- Installing: /nav_ws/install/bill_navigation/share/bill_navigation/package.dsv
+[3.050s] -- Installing: /nav_ws/install/bill_navigation/share/ament_index/resource_index/packages/bill_navigation
+[3.050s] -- Installing: /nav_ws/install/bill_navigation/share/bill_navigation/cmake/bill_navigationConfig.cmake
+[3.051s] -- Installing: /nav_ws/install/bill_navigation/share/bill_navigation/cmake/bill_navigationConfig-version.cmake
+[3.051s] -- Installing: /nav_ws/install/bill_navigation/share/bill_navigation/package.xml
+[3.056s] Invoked command in '/nav_ws/build/bill_navigation' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --install /nav_ws/build/bill_navigation

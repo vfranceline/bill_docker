@@ -1,0 +1,27 @@
+[0.015s] Invoking command in '/nav_ws/build/bill_gazebo': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /nav_ws/build/bill_gazebo -- -j16 -l16
+[0.082s] Invoked command in '/nav_ws/build/bill_gazebo' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /nav_ws/build/bill_gazebo -- -j16 -l16
+[0.083s] Invoking command in '/nav_ws/build/bill_gazebo': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --install /nav_ws/build/bill_gazebo
+[0.095s] -- Install configuration: ""
+[0.095s] -- Up-to-date: /nav_ws/install/bill_gazebo/share/bill_gazebo/worlds
+[0.096s] -- Up-to-date: /nav_ws/install/bill_gazebo/share/bill_gazebo/worlds/world.sdf
+[0.096s] -- Up-to-date: /nav_ws/install/bill_gazebo/share/bill_gazebo/worlds/empty.sdf
+[0.096s] -- Up-to-date: /nav_ws/install/bill_gazebo/share/bill_gazebo/worlds/room.sdf
+[0.096s] -- Up-to-date: /nav_ws/install/bill_gazebo/share/bill_gazebo/launch
+[0.096s] -- Up-to-date: /nav_ws/install/bill_gazebo/share/bill_gazebo/launch/spawn_robot.launch.py
+[0.096s] -- Up-to-date: /nav_ws/install/bill_gazebo/share/bill_gazebo/launch/world.launch.py
+[0.096s] -- Up-to-date: /nav_ws/install/bill_gazebo/share/ament_index/resource_index/package_run_dependencies/bill_gazebo
+[0.096s] -- Up-to-date: /nav_ws/install/bill_gazebo/share/ament_index/resource_index/parent_prefix_path/bill_gazebo
+[0.096s] -- Up-to-date: /nav_ws/install/bill_gazebo/share/bill_gazebo/environment/ament_prefix_path.sh
+[0.096s] -- Up-to-date: /nav_ws/install/bill_gazebo/share/bill_gazebo/environment/ament_prefix_path.dsv
+[0.097s] -- Up-to-date: /nav_ws/install/bill_gazebo/share/bill_gazebo/environment/path.sh
+[0.097s] -- Up-to-date: /nav_ws/install/bill_gazebo/share/bill_gazebo/environment/path.dsv
+[0.097s] -- Up-to-date: /nav_ws/install/bill_gazebo/share/bill_gazebo/local_setup.bash
+[0.097s] -- Up-to-date: /nav_ws/install/bill_gazebo/share/bill_gazebo/local_setup.sh
+[0.097s] -- Up-to-date: /nav_ws/install/bill_gazebo/share/bill_gazebo/local_setup.zsh
+[0.097s] -- Up-to-date: /nav_ws/install/bill_gazebo/share/bill_gazebo/local_setup.dsv
+[0.097s] -- Installing: /nav_ws/install/bill_gazebo/share/bill_gazebo/package.dsv
+[0.097s] -- Up-to-date: /nav_ws/install/bill_gazebo/share/ament_index/resource_index/packages/bill_gazebo
+[0.097s] -- Up-to-date: /nav_ws/install/bill_gazebo/share/bill_gazebo/cmake/bill_gazeboConfig.cmake
+[0.097s] -- Up-to-date: /nav_ws/install/bill_gazebo/share/bill_gazebo/cmake/bill_gazeboConfig-version.cmake
+[0.098s] -- Up-to-date: /nav_ws/install/bill_gazebo/share/bill_gazebo/package.xml
+[0.123s] Invoked command in '/nav_ws/build/bill_gazebo' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --install /nav_ws/build/bill_gazebo

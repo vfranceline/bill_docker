@@ -29,8 +29,8 @@
     range_resolution:='0.013'
     topic_name:='scan'
     always_on:=true
-    visualize:=false
-    enable_collision:=false">
+    visualize:=true
+    enable_collision:=true">
 
     <xacro:property name="radius" value="${lidar_width/2}" />
     <xacro:property name="ixx_iyy" value="${(mass/12) * (3 * radius * radius + lidar_height * lidar_height)}" />

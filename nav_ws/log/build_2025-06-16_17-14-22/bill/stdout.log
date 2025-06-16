@@ -1,0 +1,36 @@
+-- The C compiler identification is GNU 13.3.0
+-- The CXX compiler identification is GNU 13.3.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found ament_cmake: 2.5.4 (/opt/ros/jazzy/share/ament_cmake/cmake)
+-- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+-- Found ament_lint_auto: 0.17.2 (/opt/ros/jazzy/share/ament_lint_auto/cmake)
+-- Added test 'lint_cmake' to check CMake code style
+-- Added test 'xmllint' to check XML markup files
+-- Configuring done (2.3s)
+-- Generating done (0.0s)
+-- Build files have been written to: /nav_ws/build/bill
+-- Install configuration: ""
+-- Installing: /nav_ws/install/bill/share/ament_index/resource_index/package_run_dependencies/bill
+-- Installing: /nav_ws/install/bill/share/ament_index/resource_index/parent_prefix_path/bill
+-- Installing: /nav_ws/install/bill/share/bill/environment/ament_prefix_path.sh
+-- Installing: /nav_ws/install/bill/share/bill/environment/ament_prefix_path.dsv
+-- Installing: /nav_ws/install/bill/share/bill/environment/path.sh
+-- Installing: /nav_ws/install/bill/share/bill/environment/path.dsv
+-- Installing: /nav_ws/install/bill/share/bill/local_setup.bash
+-- Installing: /nav_ws/install/bill/share/bill/local_setup.sh
+-- Installing: /nav_ws/install/bill/share/bill/local_setup.zsh
+-- Installing: /nav_ws/install/bill/share/bill/local_setup.dsv
+-- Installing: /nav_ws/install/bill/share/bill/package.dsv
+-- Installing: /nav_ws/install/bill/share/ament_index/resource_index/packages/bill
+-- Installing: /nav_ws/install/bill/share/bill/cmake/billConfig.cmake
+-- Installing: /nav_ws/install/bill/share/bill/cmake/billConfig-version.cmake
+-- Installing: /nav_ws/install/bill/share/bill/package.xml

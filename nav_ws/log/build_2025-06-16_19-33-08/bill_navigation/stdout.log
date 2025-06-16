@@ -1,0 +1,27 @@
+-- Install configuration: ""
+-- Up-to-date: /nav_ws/install/bill_navigation/share/bill_navigation/launch
+-- Up-to-date: /nav_ws/install/bill_navigation/share/bill_navigation/launch/mapping.launch.py
+-- Up-to-date: /nav_ws/install/bill_navigation/share/bill_navigation/launch/spawn_robot.launch.py
+-- Installing: /nav_ws/install/bill_navigation/share/bill_navigation/launch/localization.launch.py
+-- Up-to-date: /nav_ws/install/bill_navigation/share/bill_navigation/config
+-- Up-to-date: /nav_ws/install/bill_navigation/share/bill_navigation/config/amcl_localization.yaml
+-- Up-to-date: /nav_ws/install/bill_navigation/share/bill_navigation/config/ekf.yaml
+-- Up-to-date: /nav_ws/install/bill_navigation/share/bill_navigation/config/slam_toolbox_mapping.yaml
+-- Up-to-date: /nav_ws/install/bill_navigation/share/bill_navigation/rviz
+-- Up-to-date: /nav_ws/install/bill_navigation/share/bill_navigation/rviz/localization.rviz
+-- Up-to-date: /nav_ws/install/bill_navigation/share/bill_navigation/rviz/mapping.rviz
+-- Up-to-date: /nav_ws/install/bill_navigation/share/ament_index/resource_index/package_run_dependencies/bill_navigation
+-- Up-to-date: /nav_ws/install/bill_navigation/share/ament_index/resource_index/parent_prefix_path/bill_navigation
+-- Up-to-date: /nav_ws/install/bill_navigation/share/bill_navigation/environment/ament_prefix_path.sh
+-- Up-to-date: /nav_ws/install/bill_navigation/share/bill_navigation/environment/ament_prefix_path.dsv
+-- Up-to-date: /nav_ws/install/bill_navigation/share/bill_navigation/environment/path.sh
+-- Up-to-date: /nav_ws/install/bill_navigation/share/bill_navigation/environment/path.dsv
+-- Up-to-date: /nav_ws/install/bill_navigation/share/bill_navigation/local_setup.bash
+-- Up-to-date: /nav_ws/install/bill_navigation/share/bill_navigation/local_setup.sh
+-- Up-to-date: /nav_ws/install/bill_navigation/share/bill_navigation/local_setup.zsh
+-- Up-to-date: /nav_ws/install/bill_navigation/share/bill_navigation/local_setup.dsv
+-- Installing: /nav_ws/install/bill_navigation/share/bill_navigation/package.dsv
+-- Up-to-date: /nav_ws/install/bill_navigation/share/ament_index/resource_index/packages/bill_navigation
+-- Up-to-date: /nav_ws/install/bill_navigation/share/bill_navigation/cmake/bill_navigationConfig.cmake
+-- Up-to-date: /nav_ws/install/bill_navigation/share/bill_navigation/cmake/bill_navigationConfig-version.cmake
+-- Up-to-date: /nav_ws/install/bill_navigation/share/bill_navigation/package.xml
