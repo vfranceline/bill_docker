@@ -10,8 +10,9 @@
     <xacro:include filename="$(find bill_description)/urdf/mech/robot_3d_base.urdf.xacro"/>
     <xacro:include filename="$(find bill_description)/urdf/mech/mecanum_wheel.urdf.xacro"/>
     <xacro:include filename="$(find bill_description)/urdf/sensors/lidar.urdf.xacro"/>
-    <xacro:include filename="$(find bill_description)/urdf/control/bill.gazebo"/>
-
+    <!-- <xacro:include filename="$(find bill_description)/urdf/control/bill.gazebo"/> -->
+    <xacro:include filename="$(find bill_description)/urdf/control/ros2_control.xacro"/>
+    
     <xacro:robot_3d_base prefix="$(arg prefix)"/>
 
     <xacro:mecanum_wheel
