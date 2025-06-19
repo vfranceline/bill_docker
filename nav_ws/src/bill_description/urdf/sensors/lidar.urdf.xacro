@@ -7,7 +7,7 @@
     parent:='base_link'
     frame_id:='laser_frame'
     xyz_offset:='0 0 0.0825'
-    rpy_offset:='0 0 0'
+    rpy_offset:='0 0 3.1415926535897931'
     lidar_width:=0.077
     lidar_height:=0.0398
     collision_xyz_offset:='0 0 0'
@@ -22,10 +22,10 @@
     gazebo_material_specular:='0.1 0.1 0.1 1'
     update_rate:=10
     ray_count:=720
-    min_angle:='-3.14159'
-    max_angle:='3.14159'
-    min_range:='0.20'
-    max_range:='30.0'
+    min_angle:='-0.8727'
+    max_angle:='0.8727'
+    min_range:='0.02'
+    max_range:='12.0'
     range_resolution:='0.013'
     topic_name:='scan'
     always_on:=true
@@ -86,7 +86,7 @@
         <update_rate>${update_rate}</update_rate>
         <always_on>${always_on}</always_on>
         <visualize>${visualize}</visualize>
-        <ray>
+        <lidar>
           <scan>
             <horizontal>
               <samples>${ray_count}</samples>
@@ -106,7 +106,7 @@
             <max>${max_range}</max>
             <resolution>${range_resolution}</resolution>
           </range>
-        </ray>
+        </lidar>
         <gz_frame_id>${prefix}${frame_id}</gz_frame_id>
       </sensor>
     </gazebo>

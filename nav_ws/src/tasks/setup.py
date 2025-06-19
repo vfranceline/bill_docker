@@ -21,6 +21,7 @@ setup(
     entry_points={
         'console_scripts': [
             'goal_pose = tasks.goal_pose:main',
+            'inspecao = tasks.object_avoidance:main',
         ],
     },
 )

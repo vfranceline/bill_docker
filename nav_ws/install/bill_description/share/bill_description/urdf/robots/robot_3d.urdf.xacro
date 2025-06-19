@@ -43,7 +43,7 @@
       parent="base_link"
       frame_id="laser_frame"
       xyz_offset="0.3 0 0.3"
-      rpy_offset="0 0 3.14"
+      rpy_offset="0 0 0"
       topic_name="scan"/>
 
     <gazebo reference='front_left_wheel_link'>
