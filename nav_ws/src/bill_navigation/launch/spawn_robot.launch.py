@@ -22,7 +22,7 @@ def generate_launch_description():
     )
 
     world_arg = DeclareLaunchArgument(
-        'world', default_value='empty.sdf',
+        'world', default_value='room.sdf',
         description='Name of the Gazebo world file to load'
     )
 
@@ -102,8 +102,8 @@ def generate_launch_description():
             "/cmd_vel@geometry_msgs/msg/Twist@gz.msgs.Twist",
             "/odom@nav_msgs/msg/Odometry@gz.msgs.Odometry",
             "/joint_states@sensor_msgs/msg/JointState@gz.msgs.Model",
-            # "/tf@tf2_msgs/msg/TFMessage@gz.msgs.Pose_V",
             "/scan@sensor_msgs/msg/LaserScan@gz.msgs.LaserScan",
+            "/imu@sensor_msgs/msg/Imu@gz.msgs.IMU",
         ],
         output="screen",
         parameters=[

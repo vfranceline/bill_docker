@@ -54,7 +54,7 @@ def generate_launch_description():
     map_file_path = os.path.join(
         get_package_share_directory('bill_navigation'),
         'maps',
-        'mapa_save.yaml'
+        'room_save.yaml'
     )
 
     # Launch rviz

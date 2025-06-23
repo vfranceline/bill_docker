@@ -1,18 +1,97 @@
 <?xml version="1.0" ?>
+
 <sdf version="1.6">
-  <world name="living_room_with_objects">
+  <world name="room">
+    <physics name="1ms" type="ignored">
+      <max_step_size>0.001</max_step_size>
+      <real_time_factor>1.0</real_time_factor>
+    </physics>
+    <plugin
+      filename="gz-sim-physics-system"
+      name="gz::sim::systems::Physics">
+    </plugin>
+    <plugin
+      filename="gz-sim-user-commands-system"
+      name="gz::sim::systems::UserCommands">
+    </plugin>
+    <plugin
+      filename="gz-sim-scene-broadcaster-system"
+      name="gz::sim::systems::SceneBroadcaster">
+    </plugin>
+    <plugin
+      filename="gz-sim-contact-system"
+      name="gz::sim::systems::Contact">
+    </plugin>
 
-    <!-- Luz ambiente -->
-    <include>
-      <uri>model://sun</uri>
-    </include>
+    <plugin
+      filename="gz-sim-sensors-system"
+      name="gz::sim::systems::Sensors">
+      <render_engine>ogre2</render_engine>
+    </plugin>
+    <plugin
+      filename="gz-sim-imu-system"
+      name="gz::sim::systems::Imu">
+    </plugin>
 
-    <!-- Chão -->
-    <include>
-      <uri>model://ground_plane</uri>
-    </include>
+    <light type="directional" name="sun">
+      <cast_shadows>true</cast_shadows>
+      <pose>0 0 10 0 0 0</pose>
+      <diffuse>0.8 0.8 0.8 1</diffuse>
+      <specular>0.2 0.2 0.2 1</specular>
+      <attenuation>
+        <range>1000</range>
+        <constant>0.9</constant>
+        <linear>0.01</linear>
+        <quadratic>0.001</quadratic>
+      </attenuation>
+      <direction>-0.5 0.1 -0.9</direction>
+    </light>
 
-    <!-- Caixa como sofá -->
+    <gravity>0 0 -9.8000000000000007</gravity>
+    <magnetic_field>5.5644999999999998e-06 2.2875799999999999e-05 -4.2388400000000002e-05</magnetic_field>
+    <atmosphere type='adiabatic'/>
+    <scene>
+      <ambient>0.400000006 0.400000006 0.400000006 1</ambient>
+      <background>0.699999988 0.699999988 0.699999988 1</background>
+      <shadows>true</shadows>
+    </scene>
+
+    <model name="ground_plane">
+      <static>true</static>
+      <link name="link">
+        <collision name="collision">
+          <geometry>
+            <plane>
+              <normal>0 0 1</normal>
+              <size>100 100</size>
+            </plane>
+          </geometry>
+          <surface>
+            <friction>
+              <ode>
+                <mu>50</mu>
+              </ode>
+            </friction>
+            <bounce/>
+            <contact/>
+          </surface>
+        </collision>
+        <visual name="visual">
+          <geometry>
+            <plane>
+              <normal>0 0 1</normal>
+              <size>100 100</size>
+            </plane>
+          </geometry>
+          <material>
+            <ambient>0.8 0.8 0.8 1</ambient>
+            <diffuse>0.8 0.8 0.8 1</diffuse>
+            <specular>0.8 0.8 0.8 1</specular>
+          </material>
+        </visual>
+      </link>
+    </model>
+
     <model name="sofa_box">
       <pose>1 0 0.25 0 0 1.5708</pose>
       <static>true</static>
@@ -38,8 +117,6 @@
       </link>
     </model>
 
-
-    <!-- Cilindro como mesa -->
     <model name="table_cylinder">
       <pose>-1 1 0.35 0 0 0</pose>
       <static>true</static>
@@ -67,7 +144,6 @@
       </link>
     </model>
 
-    <!-- Parede 1 (sul) -->
     <model name="wall_south">
       <pose>0 -2 0.5 0 0 0</pose>
       <static>true</static>
@@ -93,7 +169,6 @@
       </link>
     </model>
 
-    <!-- Parede 2 (norte) -->
     <model name="wall_north">
       <pose>0 2 0.5 0 0 0</pose>
       <static>true</static>
@@ -119,9 +194,8 @@
       </link>
     </model>
 
-    <!-- Parede 3 (leste) -->
     <model name="wall_east">
-      <pose>2 0 0.5 0 0 1.5708</pose> <!-- Rotacionada 90 graus -->
+      <pose>2 0 0.5 0 0 1.5708</pose> 
       <static>true</static>
       <link name="link">
         <collision name="collision">
@@ -145,9 +219,8 @@
       </link>
     </model>
 
-    <!-- Parede 4 (oeste) -->
     <model name="wall_west">
-      <pose>-2 0 0.5 0 0 1.5708</pose> <!-- Rotacionada 90 graus -->
+      <pose>-2 0 0.5 0 0 1.5708</pose>
       <static>true</static>
       <link name="link">
         <collision name="collision">
@@ -170,7 +243,6 @@
         </visual>
       </link>
     </model>
-
 
   </world>
 </sdf>
