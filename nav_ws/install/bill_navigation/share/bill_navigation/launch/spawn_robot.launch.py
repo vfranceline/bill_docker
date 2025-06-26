@@ -137,6 +137,6 @@ def generate_launch_description():
     launchDescriptionObject.add_action(delayed_spawn)
     launchDescriptionObject.add_action(robot_state_publisher_node)
     launchDescriptionObject.add_action(gz_bridge_node) 
-    # launchDescriptionObject.add_action(ekf_node)
+    launchDescriptionObject.add_action(ekf_node)
 
     return launchDescriptionObject
