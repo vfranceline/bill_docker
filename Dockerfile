@@ -8,6 +8,7 @@ ENV LC_ALL=en_US.UTF-8
 
 # Atualiza o sistema e instala dependências adicionais
 RUN apt-get update && apt-get install -y --no-install-recommends \
+    python3-pip \
     locales \
     curl \
     gnupg2 \
@@ -31,4 +32,6 @@ COPY dependencies /tmp/dependencies
 
 RUN chmod +x /tmp/install_dependencies.sh && cd /tmp && \
     bash install_dependencies.sh && cd /
+
+RUN usermod -a -G dialout root
 

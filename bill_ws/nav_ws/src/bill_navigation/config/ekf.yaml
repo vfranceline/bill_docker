@@ -1,0 +1,30 @@
+ekf_filter_node:
+  ros__parameters:
+    # --- Configurações Gerais ---
+    frequency: 50.0                # Frequência de atualização do filtro (Hz)
+    two_d_mode: true               # ESSENCIAL! Para robôs que operam em um plano 2D
+    publish_tf: true               # O EKF publicará a transformação odom -> base_link
+    
+    # --- Frames ---
+    map_frame: map                 # Frame do mapa (para navegação, não usado pelo EKF em si)
+    odom_frame: odom               # Frame de odometria (este será o frame "pai" do seu robô)
+    base_link_frame: base_link     # Frame principal do robô (deve corresponder ao seu URDF)
+    world_frame: odom              # Para EKF, o mundo é o frame de odometria
+
+    # --- Fonte 0: Odometria dos Encoders ---
+    odom0: /odom/unfiltered
+    odom0_config: [false, false, false, # Posição (X, Y, Z) -> Não usar
+                   false, false, false, # Orientação (Roll, Pitch, Yaw) -> Não usar
+                   true,  true,  false, # Velocidade Linear (Vx, Vy, Vz) -> USAR Vx e Vy
+                   false, false, true,  # Velocidade Angular (Vroll, Vpitch, Vyaw) -> USAR Vyaw
+                   false, false, false] # Aceleração Linear -> Não usar
+    odom0_differential: false      # `false` se a odometria já fornece a pose completa
+
+    # --- Fonte 1: Odometria do Laser Scan ---
+    odom1: /odom_rf2o  # Tópico padrão do pacote rf2o_laser_odometry
+    odom1_config: [true,  true,  false, # Posição (X, Y, Z) -> USAR X e Y
+                   false, false, true,  # Orientação (Roll, Pitch, Yaw) -> USAR Yaw
+                   false, false, false, # Velocidade Linear -> Não usar
+                   false, false, false, # Velocidade Angular -> Não usar
+                   false, false, false] # Aceleração Linear -> Não usar
+    odom1_differential: false

@@ -10,12 +10,14 @@ IMAGE_NAME="bill"
 function do_run() {
   echo "🔹 Criando e iniciando container '$CONTAINER_NAME'..."
   docker run -it --name "$CONTAINER_NAME" \
-    --volume="$(pwd)/nav_ws:/nav_ws" \
+    --volume="$(pwd)/bill_ws:/bill_ws" \
     --env="DISPLAY=$DISPLAY" \
     --env="QT_X11_NO_MITSHM=1" \
     --volume="/tmp/.X11-unix:/tmp/.X11-unix:rw" \
     --network=host \
     --privileged \
+    --device=/dev/ttyUSB0:/dev/ttyUSB0 \
+    --device=/dev/ttyUSB1:/dev/ttyUSB1 \
     "$IMAGE_NAME" bash -l
 }
 
