@@ -1,1 +1,1 @@
-docker build -t bill .
+DOCKER_BUILDKIT=1 docker build --progress=plain -t bill_nav .
