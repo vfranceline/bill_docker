@@ -1,6 +1,6 @@
 import os
 from launch import LaunchDescription
-from launch.actions import DeclareLaunchArgument, IncludeLaunchDescription, TimerAction
+from launch.actions import DeclareLaunchArgument, IncludeLaunchDescription, TimerAction, GroupAction
 from launch.conditions import IfCondition
 from launch.launch_description_sources import PythonLaunchDescriptionSource
 from launch.substitutions import LaunchConfiguration, PathJoinSubstitution, Command
@@ -33,15 +33,21 @@ def generate_launch_description():
         LaunchConfiguration('model') 
     ])
 
-    # Launch rviz
-    rviz_node = Node(
-        package='rviz2',
-        executable='rviz2',
-        arguments=['-d', os.path.join(pkg_urdf_path, 'rviz', 'rviz.rviz')],
-        condition=IfCondition(LaunchConfiguration('rviz')),
-        parameters=[
-            {'use_sim_time': False},
-        ]
+    # Launch Rviz with diff bot rviz file
+    rviz_config_file = os.path.join(pkg_bill_navigation, 'rviz', 'nav.config.rviz')
+    rviz2 = GroupAction(
+        condition=IfCondition(rviz_launch_arg),
+        actions=[Node(
+                    package='rviz2',
+                    executable='rviz2',
+                    arguments=['-d', rviz_config_file],
+                    output='screen',
+                    remappings=[('/map', 'map'),
+                                ('/tf', 'tf'),
+                                ('/tf_static', 'tf_static'),
+                                ('/goal_pose', 'goal_pose'),
+                                ('/clicked_point', 'clicked_point'),
+                                ('/initialpose', 'initialpose')])]
     )
 
     joint_state_publisher_node = Node(
@@ -65,6 +71,12 @@ def generate_launch_description():
             ('/tf_static', 'tf_static')
         ]
     )
+
+    tf2_node = Node(package='tf2_ros',
+                    executable='static_transform_publisher',
+                    name='static_tf_pub_laser',
+                    arguments=['0', '0', '0.02','0', '0', '0', '1','base_link','laser_link'],
+    )
     
     ekf_node = Node(
         package='robot_localization',
@@ -78,20 +90,13 @@ def generate_launch_description():
         remappings=[("/odometry/filtered", "/odom")]
     )
 
-    rf2o_odometry_node = Node(
-        package='rf2o_laser_odometry',
-        executable='rf2o_laser_odometry_node',
-        name='rf2o_laser_odometry',
-        output='screen',
-        parameters=[{
-            'laser_scan_topic': '/scan',             # Tópico de entrada do laser
-            'odom_topic': '/odom_rf2o',             # Tópico de saída da odometria
-            'publish_tf': False,                    # MUITO IMPORTANTE: Não deixe este nó publicar TFs
-            'base_frame_id': 'base_link',           # Frame do robô
-            'odom_frame_id': 'odom',                # Frame de odometria
-            'freq_time': 0.1,                       # Frequência de publicação
-            'verbose': False
-        }]
+    # Launch Twist Mux
+    twist_mux_params = os.path.join(pkg_bill_navigation,'config','twist_mux_params.yaml')
+    twist_mux = Node(
+            package="twist_mux",
+            executable="twist_mux",
+            parameters=[twist_mux_params, {'use_sim_time': False}],
+            remappings=[('/cmd_vel_out','/cmd_vel')]
     )
 
     launchDescriptionObject = LaunchDescription()
@@ -100,8 +105,9 @@ def generate_launch_description():
     launchDescriptionObject.add_action(rviz_launch_arg)
     launchDescriptionObject.add_action(robot_state_publisher_node)
     launchDescriptionObject.add_action(ekf_node)
-    launchDescriptionObject.add_action(rviz_node)
+    launchDescriptionObject.add_action(rviz2)
     launchDescriptionObject.add_action(joint_state_publisher_node)
-    # launchDescriptionObject.add_action(rf2o_odometry_node)
+    launchDescriptionObject.add_action(twist_mux)
+    launchDescriptionObject.add_action(tf2_node)
 
     return launchDescriptionObject
