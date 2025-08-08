@@ -49,8 +49,10 @@ public:
         setMotorSpeed(motor4, w4);
     }
 
-    // --- FUNÇÃO CORRIGIDA ---
     void setMotorSpeed(MotorControl &motor, float rad_per_sec) {
+
+        const int MIN_PWM = 150; // Valor mínimo de PWM (para evitar a zona morta do motor)
+
         // Define a direção do motor com base no sinal da velocidade
         if (rad_per_sec > 0.01) {
             motor.moveForward();
@@ -58,14 +60,16 @@ public:
             motor.moveBackward();
         } else {
             motor.stop();
+            return;
         }
 
-        // Mapeia a velocidade angular (rad/s) para um valor PWM (0-255)
-        // Usamos o valor absoluto da velocidade para o cálculo do PWM
-        long pwm_value = map(abs(rad_per_sec) * 100, 0, MAX_RAD_PER_SEC * 100, 0, 255);
+        // Mapeia a velocidade angular (rad/s) para um valor PWM que começa em MIN_PWM
+        // Isso garante que qualquer comando de movimento fornecerá energia suficiente para vencer a inércia.       
+        long pwm_value = map(abs(rad_per_sec) * 100, 0, MAX_RAD_PER_SEC * 100, MIN_PWM, 255);
 
-        // Aplica o fator de ajuste e limita o valor final entre 0 e 255
-        int final_pwm = constrain(pwm_value * SPEED_ADJUST_FACTOR, 0, 255);
+        // Garante que o valor final do PWM não seja menor que o mínimo (se o motor estiver 
+        // em movimento) nem maior que o maximo permitido (255).
+        int final_pwm = constrain(pwm_value, MIN_PWM, 255);
 
         motor.setSpeed(final_pwm);
     }
