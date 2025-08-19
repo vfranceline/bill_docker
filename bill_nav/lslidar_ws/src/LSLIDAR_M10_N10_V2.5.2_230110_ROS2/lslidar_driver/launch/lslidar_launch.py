@@ -11,7 +11,7 @@ import os
 
 def generate_launch_description():
 
-    driver_dir = os.path.join(get_package_share_directory('lslidar_driver'), 'params', 'lsx10.yaml')
+    driver_dir = os.path.join(get_package_share_directory('lslidar_driver'), 'params', 'lsn10p.yaml')
                      
     driver_node = LifecycleNode(package='lslidar_driver',
                                 executable='lslidar_driver_node',
