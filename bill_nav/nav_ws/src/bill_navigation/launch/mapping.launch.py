@@ -36,60 +36,6 @@ def generate_launch_description():
 
     # --- Definição dos Nós ---
 
-    # ADICIONADO: Nó do Driver do Lidar
-    # Este nó é essencial para publicar os dados brutos da nuvem de pontos
-    lslidar_driver_node = Node(
-        package='lslidar_driver',
-        executable='lslidar_driver_node',
-        name='lslidar_driver_node',
-        parameters=[lslidar_param_file, {'use_sim_time': LaunchConfiguration('use_sim_time')}],
-        output='screen'
-    )
-
-    rf2o_node = Node(
-        package='rf2o_laser_odometry',
-        executable='rf2o_laser_odometry_node',
-        name='rf2o_laser_odometry_node',
-        parameters=[{
-            'use_sim_time': LaunchConfiguration('use_sim_time'),
-            'base_frame': 'base_link',
-            'odom_frame': 'odom',
-            'scan_topic': '/scan_convertido',
-            'publish_tf': True,
-            'publish_odom_tf': True,
-            'max_laser_range': 20.0,
-            'min_laser_range': 0.1,
-            'laser_min_height': -0.1,
-            'laser_max_height': 0.1,
-            'angle_min': -3.1415,  # -180 graus
-            'angle_max': 3.1415,   # +180 graus
-            'use_inf': True,
-            'transform_publish_period': 0.05,
-        }]
-    )
-
-    # Nó para converter PointCloud2 para LaserScan
-    pointcloud_to_laserscan_node = Node(
-        package='pointcloud_to_laserscan',
-        executable='pointcloud_to_laserscan_node',
-        name='pointcloud_to_laserscan_node',
-        remappings=[
-            ('cloud_in', '/lslidar_point_cloud'),
-            ('scan', '/scan')
-        ],
-        parameters=[{
-            'target_frame': 'laser_link',
-            'min_height': -0.1,
-            'max_height': 0.1,
-            'angle_min': -3.1415, # -180 graus
-            'angle_max': 3.1415,  # +180 graus
-            'range_min': 0.1,
-            'range_max': 20.0,
-            'use_inf': True,
-            # MELHORIA: Passando use_sim_time para garantir consistência
-            'use_sim_time': LaunchConfiguration('use_sim_time'),
-        }]
-    )
 
     # Nó do SLAM Toolbox
     slam_toolbox_node = Node(
@@ -98,9 +44,6 @@ def generate_launch_description():
         name='slam_toolbox',
         parameters=[
             slam_toolbox_params_file,
-            # Sobrescreve o tópico do scan e garante o uso correto do tempo
-            # {'scan_topic': '/scan_convertido'},
-            # MELHORIA: Passando use_sim_time para garantir consistência
             {'use_sim_time': LaunchConfiguration('use_sim_time')}
         ],
         output='screen'
@@ -122,9 +65,6 @@ def generate_launch_description():
     ld.add_action(rviz_launch_arg)
     ld.add_action(rviz_config_arg)
     ld.add_action(sim_time_arg)
-    # ld.add_action(lslidar_driver_node)
-    # ld.add_action(rf2o_node)
-    ld.add_action(pointcloud_to_laserscan_node)
     ld.add_action(slam_toolbox_node)
     ld.add_action(rviz_node)
 

@@ -11,5 +11,6 @@ ros-jazzy-nav2-bringup
 ros-jazzy-nav2-amcl
 ros-jazzy-navigation2
 libpcap-dev
+ros-jazzy-diagnostic-updater
 
 
